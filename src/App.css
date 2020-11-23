@@ -7,6 +7,12 @@
   pointer-events: none;
 }
 
+.NavLink {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -1,0 +1,6 @@
+{
+  "welcome":{
+    "id":"app.about.welcome",
+    "defaultMessage":"Welcome to About"
+  }
+}

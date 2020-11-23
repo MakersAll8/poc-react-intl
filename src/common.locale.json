@@ -1,0 +1,18 @@
+{
+  "about":{
+    "id":"app.about",
+    "defaultMessage":"About"
+  },
+  "today":{
+    "id":"app.today",
+    "defaultMessage":"Today"
+  },
+  "home":{
+    "id":"app.home",
+    "defaultMessage":"Home"
+  },
+  "noParam":{
+    "id":"app.noParam",
+    "defaultMessage":"NoParam"
+  }
+}

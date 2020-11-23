@@ -1,0 +1,14 @@
+{
+  "noParam":{
+    "id": "app.noparam.noParam",
+    "defaultMessage":"No <bold>{param}</bold> found"
+  },
+  "debtorAccount":{
+    "id": "app.noparam.debtorAccount",
+    "defaultMessage":"Debtor Account"
+  },
+  "glAccount":{
+    "id": "app.noparam.glAccount",
+    "defaultMessage":"General Ledger Account"
+  }
+}

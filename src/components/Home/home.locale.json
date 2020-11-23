@@ -1,0 +1,6 @@
+{
+  "welcome":{
+    "id":"app.home.welcome",
+    "defaultMessage":"Welcome to Home"
+  }
+}

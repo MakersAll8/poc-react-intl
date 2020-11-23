@@ -1,0 +1,6 @@
+{
+  "today": {
+    "id": "app.today.today",
+    "defaultMessage": "Today is: {ts, date, ::yyyyMMdd}"
+  }
+}

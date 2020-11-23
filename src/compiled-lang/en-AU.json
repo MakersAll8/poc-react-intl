@@ -1,0 +1,89 @@
+{
+  "app.about": [
+    {
+      "type": 0,
+      "value": "About"
+    }
+  ],
+  "app.about.welcome": [
+    {
+      "type": 0,
+      "value": "Welcome to About"
+    }
+  ],
+  "app.home": [
+    {
+      "type": 0,
+      "value": "Home"
+    }
+  ],
+  "app.home.welcome": [
+    {
+      "type": 0,
+      "value": "Welcome to Home"
+    }
+  ],
+  "app.noParam": [
+    {
+      "type": 0,
+      "value": "NoParam"
+    }
+  ],
+  "app.noparam.debtorAccount": [
+    {
+      "type": 0,
+      "value": "Debtor Account"
+    }
+  ],
+  "app.noparam.glAccount": [
+    {
+      "type": 0,
+      "value": "General Ledger Account"
+    }
+  ],
+  "app.noparam.noParam": [
+    {
+      "type": 0,
+      "value": "No "
+    },
+    {
+      "children": [
+        {
+          "type": 1,
+          "value": "param"
+        }
+      ],
+      "type": 8,
+      "value": "bold"
+    },
+    {
+      "type": 0,
+      "value": " found"
+    }
+  ],
+  "app.today": [
+    {
+      "type": 0,
+      "value": "Today"
+    }
+  ],
+  "app.today.today": [
+    {
+      "type": 0,
+      "value": "Today is: "
+    },
+    {
+      "style": {
+        "parsedOptions": {
+          "day": "2-digit",
+          "month": "2-digit",
+          "year": "numeric"
+        },
+        "pattern": "yyyyMMdd",
+        "type": 1
+      },
+      "type": 3,
+      "value": "ts"
+    }
+  ]
+}

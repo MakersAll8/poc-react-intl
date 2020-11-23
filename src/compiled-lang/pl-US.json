@@ -1,0 +1,14 @@
+{
+  "app.about.welcome": [
+    {
+      "type": 0,
+      "value": "Elcomeway otay Aboutway"
+    }
+  ],
+  "app.home.welcome": [
+    {
+      "type": 0,
+      "value": "Elcomeway otay Omehay"
+    }
+  ]
+}
