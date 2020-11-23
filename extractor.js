@@ -15,6 +15,8 @@
 
 const fs = require('fs');
 const path = require('path');
+const chalk = require('chalk')
+const log = console.log;
 
 // tell me where you want to start traversing to find .json files
 let projectDir = path.normalize(__dirname + '/src')
@@ -42,7 +44,7 @@ const exploreDirectory = (dir) => {
 
 // start exploring from projectDir
 exploreDirectory(projectDir)
-console.log('Files to extract: ', filesToExtract)
+log('Files to extract: ', filesToExtract)
 
 let messages = []
 
@@ -56,28 +58,51 @@ filesToExtract.forEach(file => {
 })
 
 let knownIds = []
+let knownValues = {}
 let duplicateIds = []
 // format messages into format.js compliant structure for npm run compile to work properly
 let extracted = {}
 for (let i=0,l=messages.length; i< l; i++) {
   let id = messages[i].id
+  // if id is already seen, we have duplicate ids
   if (knownIds.includes(id)) duplicateIds.push(id)
+
   let defaultMessage = messages[i].defaultMessage
+
+  // if value is previously seen, we have duplicate values
+  if (defaultMessage in knownValues) {
+    knownValues[defaultMessage]++
+  } else {
+    knownValues[defaultMessage] = 1
+  }
   let description = messages[i].description
   extracted[id] = {defaultMessage}
   description && (extracted[id].description = description)
   knownIds.push(messages[i].id)
 }
 
-// write out extracted messages
+// warn duplicate ids
 if (duplicateIds.length > 0) {
-  console.warn('duplicate ids: ', duplicateIds)
+  log(chalk.bgRed.bold('duplicate ids: '), duplicateIds)
 } else {
-  console.info('No duplicate id found')
+  log(chalk.green.bold('No duplicate id found'))
 }
 
+// warn duplicate values
+let foundDuplicateValues = false;
+for(const [key, value] of Object.entries(knownValues)){
+  if (value > 1) {
+    log(chalk.bgRed.bold('duplicate value: '), chalk.bgRed.bold(key), chalk.bgRed.bold(' count: '), chalk.bgRed.bold(value))
+    foundDuplicateValues = true;
+  }
+}
+if(!foundDuplicateValues){
+  log(chalk.green.bold('No duplicate value found'))
+}
+
+// write out extracted messages
 let outputFile = '/src/lang/en-AU.json'
 fs.writeFile(path.normalize(__dirname + outputFile), JSON.stringify(extracted), function (err) {
-    if (err) return console.log(err)
+    if (err) return log(err)
     console.log('extracted messages')
 })

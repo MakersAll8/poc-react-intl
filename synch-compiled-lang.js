@@ -21,6 +21,7 @@ files.forEach(file => {
         if (!(key in targetLocale)){
           targetLocale[key] = value
         }
+        // hash check
       }
 
       fs.writeFile(path.normalize(path.join(compiledDir, file)), JSON.stringify(targetLocale), function (err) {
