@@ -50,7 +50,7 @@
       "children": [
         {
           "type": 1,
-          "value": "param"
+          "value": "accountType"
         }
       ],
       "type": 8,

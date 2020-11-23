@@ -1,14 +1,1 @@
-{
-  "app.about.welcome": [
-    {
-      "type": 0,
-      "value": "Elcomeway otay Aboutway"
-    }
-  ],
-  "app.home.welcome": [
-    {
-      "type": 0,
-      "value": "Elcomeway otay Omehay"
-    }
-  ]
-}
+{"app.about":[{"type":0,"value":"Aboutway"}],"app.about.welcome":[{"type":0,"value":"Elcomeway otay Aboutway"}],"app.home":[{"type":0,"value":"Omehay"}],"app.home.welcome":[{"type":0,"value":"Elcomeway otay Omehay"}],"app.noParam":[{"type":0,"value":"OParamnay"}],"app.noparam.debtorAccount":[{"type":0,"value":"Ebtorday Accountway"}],"app.noparam.glAccount":[{"type":0,"value":"Eneralgay Edgerlay Accountway"}],"app.noparam.noParam":[{"type":0,"value":"Onay "},{"children":[{"type":1,"value":"accountType"}],"type":8,"value":"bold"},{"type":0,"value":" oundfay"}],"app.today":[{"type":0,"value":"Odaytay"}],"app.today.today":[{"type":0,"value":"Odaytay isway: "},{"style":{"parsedOptions":{"day":"2-digit","month":"2-digit","year":"numeric"},"pattern":"yyyyMMdd","type":1},"type":3,"value":"ts"}]}

@@ -9,9 +9,7 @@ export const useTranslate = () => {
     // this is the mock up api call to get translated messages
     const getMessages = async ()=>{
       const res = await loadLocaleData(state.locale);
-      res && res.default ?
-      dispatch({type:'SET_MESSAGES', payload:{messages: res.default}}) : 
-      dispatch({type:'SET_MESSAGES', payload:{messages: false}})
+      if (res && res.default) dispatch({type:'SET_MESSAGES', payload:{messages: res.default}})
     };
     getMessages()
   }, [dispatch, state.locale])

@@ -1,7 +1,7 @@
 {
   "noParam":{
     "id": "app.noparam.noParam",
-    "defaultMessage":"No <bold>{param}</bold> found"
+    "defaultMessage":"No <bold>{accountType}</bold> found"
   },
   "debtorAccount":{
     "id": "app.noparam.debtorAccount",

@@ -12,13 +12,13 @@ export const NoParam = () => {
     <div>
       <p>{intl.formatMessage(messages.noParam, 
           {
-            param: intl.formatMessage(messages.debtorAccount),
+            accountType: intl.formatMessage(messages.debtorAccount),
             bold: str => <b>{str}</b>
           })}</p>
 
       <p>{intl.formatMessage(messages.noParam, 
           {
-            param: intl.formatMessage(messages.glAccount),
+            accountType: intl.formatMessage(messages.glAccount),
             bold: str => <b>{str}</b>
           })}</p>
     </div>

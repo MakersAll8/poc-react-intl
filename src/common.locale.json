@@ -14,5 +14,9 @@
   "noParam":{
     "id":"app.noParam",
     "defaultMessage":"NoParam"
+  },
+  "duplicateAbout":{
+    "id":"app.about",
+    "defaultMessage":"About"
   }
 }
